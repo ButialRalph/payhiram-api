@@ -23,7 +23,7 @@ class AccountController extends Controller
        return $request->all();
 
     }
-    public function update()
+    public function update($id)
     {
        //$account=Account::all();
         return $request->all();   
