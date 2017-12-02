@@ -36,7 +36,7 @@ Route::get('partner/update','PartnerController@update');
 
 Route::get('account/create','AccountController@create');
 Route::post('account/insert','AccountController@insert');
-Route::get('account/update','AccountController@update');
+Route::get('account/update/{$id}','AccountController@update');
 
 Route::get('wallet/create','WalletController@create');
 Route::post('wallet/insert','WalletController@insert');
