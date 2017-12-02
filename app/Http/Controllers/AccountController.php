@@ -8,7 +8,8 @@ class AccountController extends Controller
 {
       public function create()
     {
-      
+       $account=Account::all();
+       return response()->json($account);
     }
 
     public function insert(Request $request)

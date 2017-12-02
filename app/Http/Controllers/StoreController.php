@@ -8,7 +8,8 @@ class StoreController extends Controller
 {
     public function create()
     {
-      
+       $store=Store::all();
+       return response()->json($store);
     }
 
     public function insert(Request $request)
@@ -25,8 +26,10 @@ class StoreController extends Controller
 
 
     }
-    public function update()
+   /* public function update($id)
     {
+             $store = Store::find($id);
 
-    }
+             Store::update
+    }*/
 }

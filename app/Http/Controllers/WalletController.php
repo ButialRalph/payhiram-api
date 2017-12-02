@@ -9,7 +9,8 @@ class WalletController extends Controller
     
    public function create()
     {
-      
+        $wallets=Wallet::all();
+        return response()->json($wallets);
     }
 
     public function insert(Request $request)

@@ -10,7 +10,8 @@ class PartnerController extends Controller
 
        public function create()
     {
-      
+        $partners=Partner::all();
+        return response()->jason($partners);
     }
 
     public function insert(Request $request)

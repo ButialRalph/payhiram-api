@@ -10,7 +10,8 @@ class PointController extends Controller
     
      public function create()
     {
-      
+        $points=Point::all();
+        return response()->json($points);
     }
 
     public function insert(Request $request)
