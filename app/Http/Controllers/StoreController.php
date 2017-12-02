@@ -17,7 +17,8 @@ class StoreController extends Controller
        $insert = new Store;
        $insert->id=$request['id'];
        $insert->store_name=$request['store_name'];
-       $insert->location=$request['location'];
+       $insert->longtitude=$request['longtitude'];
+       $insert->latitude=$request['latitude'];
        $insert->save();
 
        return $request->all();

@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Store extends Model
 {
-   protected $fillable = ['id','store_name','location'];
+   protected $fillable = ['id','store_name','longtitude','latitude'];
 }
